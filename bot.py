@@ -1,7 +1,7 @@
 from telegram import Update, WebAppInfo, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "YOUR_BOT_TOKEN"
+TOKEN = "7765881253:AAGeSg759wEnbkrqIINg3gK6xfyCeco3SPw"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     kb = [[KeyboardButton("🛠 Залишити заявку", web_app=WebAppInfo(url="https://yourdomain.com/webapp/index.html"))]]
