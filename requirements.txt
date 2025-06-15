@@ -1,1 +1,3 @@
-
+phyton-telegram-bot==20.3
+pip install -r requirements.txt
+phyton bot.py
