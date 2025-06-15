@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 BOT_TOKEN = "7715128894:AAGLWpKmPDcwdv1MiOCXL-AoKScfZmc6D4s"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    kb = [[KeyboardButton("🛠 Залишити заявку", web_app=WebAppInfo(url="https://alextomko23.github.io/repair-webapp/"))]]
+    kb = [[KeyboardButton("🛠 Залишити заявку", web_app=WebAppInfo(url="https://github.com/alextom90/repair-webapp.git"))]]
     reply_markup = ReplyKeyboardMarkup(kb, resize_keyboard=True)
     await update.message.reply_text("Натисніть кнопку нижче, щоб залишити заявку:", reply_markup=reply_markup)
 
