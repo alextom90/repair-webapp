@@ -296,4 +296,241 @@
         }
         
         .copyright {
-            border-top: 1px solid #
+            border-top: 1px solid #3c4043;
+            padding-top: 2rem;
+            color: #bdc1c6;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">TechRepairUA</a>
+                <ul class="nav-links">
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#how-it-works">Як це працює</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero">
+                <h1>Професійний ремонт техніки</h1>
+                <p>Швидкий, якісний та доступний ремонт ваших пристроїв з гарантією. Працюємо з усіма брендами та моделями.</p>
+                <a href="https://t.me/YourRepairBot" class="btn btn-telegram">
+                    <img src="https://telegram.org/img/t_logo.png" alt="Telegram">
+                    Зв'язатися у Telegram
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Наші послуги</h2>
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ремонт смартфонів</h3>
+                        <p>Заміна екранів, акумуляторів, роз'ємів зарядки, ремонт після води та інші послуги.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ремонт ноутбуків</h3>
+                        <p>Чистка, заміна термопасти, ремонт матриць, клавіатур, роз'ємів та інше.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ремонт ПК</h3>
+                        <p>Діагностика, заміна комплектуючих, чистка, налаштування ПК.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ремонт планшетів</h3>
+                        <p>Заміна дисплеїв, акумуляторів, ремонт після механічних пошкоджень.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ремонт ігрових консолей</h3>
+                        <p>PlayStation, Xbox, Nintendo - ремонт будь-якої складності.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Інші послуги</h3>
+                        <p>Ремонт smart-годинників, навушників, моніторів та іншої техніки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Про нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Чому обирають нас?</h2>
+                    <p>Ми - команда професіоналів з більш ніж 10-річним досвідом у ремонті техніки. Наші майстри постійно підвищують кваліфікацію та використовують тільки якісні комплектуючі.</p>
+                    <p>Ми пропонуємо швидкий та якісний сервіс з гарантією на всі виконані роботи. Наші клієнти завжди задоволені результатом!</p>
+                    <p>Використовуємо сучасне обладнання та оригінальні запчастини для більшості популярних брендів.</p>
+                    <a href="#contact" class="btn">Зв'язатися з нами</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Ремонт техніки">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Як це працює</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Оформлення заявки</h3>
+                    <p>Залиште заявку у нашому Telegram боті, вказавши тип пристрою та опис проблеми.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Діагностика</h3>
+                    <p>Наші майстри проведуть безкоштовну діагностику та повідомлять вам точну вартість ремонту.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Ремонт</h3>
+                    <p>Після підтвердження ми приступаємо до ремонту. Середній термін - від 30 хвилин до 2 днів.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Отримання</h3>
+                    <p>Ви отримуєте відремонтований пристрій з гарантією та детальним звітом про виконані роботи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакти</h2>
+            <p>Зв'яжіться з нами зручним для вас способом</p>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Адреса</h3>
+                    <p>м. Київ, вул. Ремонтна, 15</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3><i class="fas fa-phone"></i> Телефон</h3>
+                    <p>+380 (XX) XXX-XX-XX</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@techrepair.ua</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3><i class="fab fa-telegram"></i> Telegram</h3>
+                    <p>@TechRepairUA_bot</p>
+                    <a href="https://t.me/YourRepairBot" class="btn btn-telegram" style="margin-top: 10px; padding: 0.5rem 1rem;">
+                        <img src="https://telegram.org/img/t_logo.png" alt="Telegram">
+                        Написати
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TechRepairUA</h3>
+                    <p>Професійний ремонт техніки з гарантією якості. Працюємо з 2010 року.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Послуги</h3>
+                    <ul>
+                        <li><a href="#">Ремонт смартфонів</a></li>
+                        <li><a href="#">Ремонт ноутбуків</a></li>
+                        <li><a href="#">Ремонт ПК</a></li>
+                        <li><a href="#">Ремонт планшетів</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакти</h3>
+                    <ul>
+                        <li><a href="tel:+380XXXXXXXXX">+380 (XX) XXX-XX-XX</a></li>
+                        <li><a href="mailto:info@techrepair.ua">info@techrepair.ua</a></li>
+                        <li><a href="https://t.me/7616413736:AAHlQbCA5zg7arG8ODYuCh322jE7p4UvKhM">Telegram бот</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Графік роботи</h3>
+                    <ul>
+                        <li>Пн-Пт: 9:00 - 19:00</li>
+                        <li>Сб: 10:00 - 17:00</li>
+                        <li>Нд: вихідний</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 TechRepairUA. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
